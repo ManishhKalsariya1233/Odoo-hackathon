@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <CodeWithHarry class="com"></CodeWithHarry>
+    </title>
+    <style>
+        body {
+            width: 100vw;
+            height: 450vh;
+            background-color: rgba(1, 4, 12, 0.974);
+           
+
+
+        }
+
+        nav {
+            margin: 0;
+            padding: 0;
+            height: 70px;
+            display: flex;
+            align-items: center;
+
+
+            gap: 20px;
+            background-color: rgb(0, 0, 25);
+            color: white;
+            border-radius: 4px;
+
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+
+            justify-content: space-around;
+            gap: 30px;
+            position: relative;
+            left: 60px;
+        }
+
+        .navButtons ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+            position: relative;
+            left: 60px;
+
+        }
+
+        .textbox {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0px;
+            margin: 0px;
+
+            position: relative;
+            left: 80px;
+
+        }
+
+        .cwh {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            font-family: sans-serif;
+            font-weight: 900;
+        }
+
+        main img {
+            height: 200vh;
+            width: 100vw;
+            opacity: 0.11;
+        }
+
+        .mainText {
+            color: white;
+            font-size: 80px;
+            position: relative;
+            top: -140vh;
+            text-align: center;
+        }
+
+
+        .learn {
+            position: relative;
+            top: -137vh;
+            text-align: center;
+            color: white;
+            font-size: 30px;
+
+        }
+
+        .para1 {
+            position: relative;
+            top: -129vh;
+            text-align: center;
+            color: white;
+            margin: 7px;
+            font-size: 20px;
+
+        }
+        .mainButtons ul li {
+
+            height: auto;
+            width: auto;
+            text-align: center;
+            position: relative;
+
+
+
+        }
+
+        .mainButtons ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+           
+            text-align: center;
+           
+            color: white;
+            position: relative;
+            top: -13vh;
+           
+
+
+        }
+
+        .mainButtons ul li{
+             border: 2px solid white;
+            border-radius: 7px;
+             padding: 5px 20px 5px 20px;
+              position: relative;
+            top: -90vh;
+        }
+
+        .mainButtons ul> :first-child{
+            background-color: white;
+            color: black;
+        }
+
+        .grid{
+            display: grid;
+            grid-template-columns: 140px 140px 140px;
+            color: white;
+            text-align: center;
+            position: relative;
+            top: -75vh;
+            position: relative;
+            justify-content: center;
+                        
+        }
+
+        .first{
+            display: flex;
+            flex-direction: column;
+            background-color: rgba(34, 111, 170, 0.238);
+            padding: 16px;
+            border-radius: 10px 0px 0px 10px ;
+        }
+
+        .first> :first-child{
+            font-size: 30px;
+            font-weight: 800;
+            font-family: sans-serif;
+        }
+
+        .first> :nth-child(2){
+            font-size: 20px;
+
+        }
+
+        .second{
+            display: flex;
+            flex-direction: column;
+            background-color: rgba(34, 111, 170, 0.238);
+            padding: 16px;
+            
+        }
+
+          .second> :first-child{
+            font-size: 30px;
+            font-weight: 800;
+            font-family: sans-serif;
+        }
+
+        .second> :nth-child(2){
+            font-size: 20px;
+
+        }
+
+        .third{
+            display: flex;
+            flex-direction: column;
+            background-color: rgba(34, 111, 170, 0.238);
+            padding: 16px;
+            border-radius: 0px 10px 10px 0px;
+        }
+
+          .third> :first-child{
+            font-size: 30px;
+            font-weight: 800;
+            font-family: sans-serif;
+        }
+
+        .third> :nth-child(2){
+            font-size: 20px;
+
+        }
+
+
+        .line{
+            height: 1.5px;
+            width: 100vw;
+            background-color: grey;
+            position: relative ;
+            top: -49vh;
+        }
+
+        .para2{
+            color: white;
+            position: relative;
+            top: -40vh;
+            text-align: center;
+            font-size: large;
+            font-family: sans-serif;
+            margin: 5px;
+        }
+
+        .mainT{
+            font-size: 30px;
+            font-weight: 600;
+            padding: 5px;
+            margin: 10px;
+        }
+
+        .NewFlex{
+            display: flex;
+            color: white;
+           
+            justify-content: center;
+            align-items: center;
+            /* text-align: center; */
+            column-gap: 50px;
+            
+            
+
+
+        }
+
+        .img1, .img2, .img3 {
+            border: 2px solid;
+            border-radius: 9px;
+            background-color: grey;
+            height: 450px;
+            
+        }
+       
+
+        .img3 img{
+            height: 300px;
+            width: 400px;
+            object-fit: cover;
+            opacity: 1;
+            border-radius:7px 7px 0px 0px;
+            background-color: grey;
+        }
+        .img2 img{
+            height: 300px;
+            
+            width: 400px;
+            object-fit: cover;
+            opacity: 1;
+            border-radius: 5px;
+        }
+        .img1 img{
+            height: 300px;
+            
+            width: 400px;
+            object-fit: cover;
+            opacity: 1;
+            border-radius: 0px 5px ;
+        }
+
+       .tnew{
+           margin: 0px 10px 0px 0px;
+       
+        font-size: 18px;
+
+       }
+
+       .t1 , .t5 , .t8 {
+        font-size: 20px;
+        font-family: sans-serif;
+        font-weight: 600;
+        padding: 0px 10px;
+       }
+
+       .tnew{
+        padding: 10px 20px;
+        
+       
+       }
+
+        </style>
+</head>
+
+<body>
+    <nav>
+        <div class="cwh">&lt;/&gt;CodeWithHarry</div>
+        <ul>
+            <li>Home</li>
+            <li>Course</li>
+            <li>Tutorials</li>
+            <li>Blog</li>
+            <li>Notes</li>
+            <li>Contact</li>
+        </ul>
+        <div class="textbox">
+            <input type="text" placeholder="search">
+        </div>
+        <div class="navButtons">
+            <ul>
+                <li>Login</li>
+                <li>SignUp</li>
+                <li>Mode</li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="backimage"></div>
+        <img src="https://www.codewithharry.com/_next/image?url=%2Fcoding%2F1.jpg&w=1920&q=75" alt="">
+        <div class="mainText">Welcome to CodeWithHarry</div>
+        <div class="learn">Learn DSA |</div>
+        <div class="para1">Confused about which course to take? We've got you covered! Browse courses and</div>
+        <div class="para1">discover the best option for you. It's free! CodeWithHarry is my effort to teach the</div>
+        <div class="para1">basics and those coding techniques in a short time that took me years to master. </div>
+
+        <div class="mainButtons">
+            <ul>
+                <li>Explore Courses</li>
+                <li>Read Articles</li>
+            </ul>
+        </div>
+
+        <div class="grid">
+            <div class="first">
+                <span>100+</span>
+                <span><small>Courses</small></span>
+            </div>
+            <div class="second">
+                <span>500k+</span>
+                <span><small>Students</small></span>
+            </div>
+            <div class="third">
+                <span>5.0</span>
+                <span>Ratings</span>
+            </div>
+        </div>
+
+        <div class="line">
+            
+        </div>
+
+        <div class="mainT para2">Code Smarter with Real-World Practice</div>
+        <div class="para2">At CodeWithHarry, you don't just learn code — you engage in practical exercises that reflect</div>
+        <div class="para2">real-world scenarios. From beginner-friendly lessons to advanced courses trusted by</div>
+        <div class="para2">professionals, we prepare you for real-world projects.</div>
+
+        <div class="NewFlex">
+            <div class="img1">
+                <img src="https://www.codewithharry.com/_next/image?url=%2Fcoding%2F2.jpg&w=3840&q=75" alt="">
+                <div class="t1 tnew">Web Development</div>
+                <span class="t2 tnew">Learn HTML, CSS, JavaScript and modern
+                </span><span class="tnew">to build responsive websites and web</span>
+                <span class="tnew">applications.</span>
+            </div>
+
+            <div class="img2">
+                <img src="https://www.codewithharry.com/_next/image?url=%2Fcoding%2F3.jpg&w=3840&q=75" alt="">
+                <div class="t5 tnew">Data Science & AI</div>
+                <span class="t6 tnew">Master Python, data analysis, machine learning
+                and </span><span class="tnew">intelligence with hands-on projects.</span>
+
+            </div>
+
+            <div class="img3">
+                <img src="https://www.codewithharry.com/_next/image?url=%2Fcoding%2F4.jpg&w=3840&q=75" alt="">
+                <div class="t8 tnew">Data Structures & Algorithms</div>
+                <span class="t9 tnew">Learn DSA and crack interviews at top companies
+                </span><span class="tnew">like Google and Microsoft.</span>
+
+            </div>
+        </div>
+
+
+
+    </main>
+
+
+
+</body>
+
+</html>
